@@ -1,7 +1,7 @@
 # Deep Flow-Guided Video Inpainting
 [CVPR 2019 Paper](https://arxiv.org/abs/1905.02884) | [Project Page](https://nbei.github.io/video-inpainting.html) | [YouTube](https://www.youtube.com/watch?v=LIJPUsrwx5E) | [BibeTex](#citation)
 
-<img src="https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting/blob/master/gif/captain.gif" width="860"/>
+<img src="gif/captain.gif" width="860"/>
 
 ## Install & Requirements
 The code has been tested on pytorch=0.4.0 and python3.6. Please refer to `requirements.txt` for detailed information. 
@@ -30,7 +30,7 @@ An example demo containing frames and masks has been put into the demo and runni
 ```
 python tools/video_inpaint.py --frame_dir ./demo/frames --MASK_ROOT ./demo/masks --img_size 512 832 --FlowNet2 --DFC --ResNet101 --Propagation 
 ```
-<img src="https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting/blob/master/gif/flamingo.gif" width="850"/>
+<img src="gif/flamingo.gif" width="850"/>
 
 We provide the original model weight used in our movie demo which use ResNet101 as backbone and other related weights pls download from [here](https://drive.google.com/drive/folders/1a2FrHIQGExJTHXxSIibZOGMukNrypr_g?usp=sharing). 
 Please refer to [tools](https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting/tree/master/tools) for detailed use and training settings. 
@@ -46,7 +46,7 @@ CUDA_VISIBLE_DEVICES=0 python tools/video_inpaint.py --frame_dir ./demo/lady-run
 --PRETRAINED_MODEL_3 ./pretrained_models/DAVIS_model/davis_stage3.pth \
 --MS --th_warp 3 --FIX_MASK
 ```
-<img src="https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting/blob/master/gif/lady-running-res.gif" width="850"/>
+<img src="gif/lady-running-res.gif" width="850"/>
 You can just change the **th_warp** param for getting better results in your video. 
 
 * To extract flow for videos:
